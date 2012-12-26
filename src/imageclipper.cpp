@@ -176,6 +176,7 @@ void load_reference( const ArgParam* arg, CvCallbackParam* param )
         if( is_dir )
         {
             param->filelist = filesystem::filelist( arg->reference, param->imtypes, "file" );
+            sort(param->filelist.begin(),param->filelist.end());
             if( param->filelist.empty() )
             {
                 cerr << "No image file exist under a directory " << filesystem::realpath( arg->reference ) << endl << endl;
