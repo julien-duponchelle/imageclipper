@@ -1,3 +1,11 @@
+This project is a fork of http://code.google.com/p/imageclipper/ with some
+patch included.
+
+The fork compile on MacOS without problems.
+
+See more http://code.google.com/p/imageclipper/
+
+===========
 The MIT License
 
 Copyright (c) 2008, Naotoshi Seo <sonots(at)umd.edu>
@@ -21,6 +29,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-HOW TO USE
- Drag and drop a directory having images or a video file onto imageclipper.exe
- See more http://code.google.com/p/imageclipper/
