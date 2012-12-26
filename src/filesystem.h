@@ -69,7 +69,7 @@ namespace filesystem {
     inline string basename( const string& path )
     {
         boost::filesystem::path fspath( path );
-        return fspath.leaf();
+        return fspath.leaf().string();
     }
 
     inline string filename( const string& path )
