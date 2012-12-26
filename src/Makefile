@@ -8,8 +8,8 @@
 CC = g++
 LINK = g++
 INSTALL = install
-CFLAGS = `pkg-config --cflags opencv` -I ~/usr/include/boost-1_36 -I.
-LFLAGS = `pkg-config --libs opencv` -L ~/usr/lib -lboost_system-gcc41-mt -lboost_filesystem-gcc41-mt
+CFLAGS = `pkg-config --cflags opencv` -I.
+LFLAGS = `pkg-config --libs opencv` -lboost_system-mt -lboost_filesystem-mt
 all: imageclipper
 
 imageclipper.o: imageclipper.cpp
