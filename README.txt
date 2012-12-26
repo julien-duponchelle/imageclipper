@@ -1,5 +1,5 @@
 This project is a fork of http://code.google.com/p/imageclipper/ with some
-patch included.
+patch included in order to fix compilation problems.
 
 The fork compile on MacOS without problems.
 
