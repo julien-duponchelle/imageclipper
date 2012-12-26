@@ -57,13 +57,13 @@ namespace filesystem {
     inline string realpath( const string& path )
     {
         boost::filesystem::path fspath( path );
-        return fspath.native_file_string();
+        return fspath.native();
     }
 
     inline string dirname( const string& path )
     {
         boost::filesystem::path fspath( path );
-        return fspath.branch_path().native_file_string();
+        return fspath.branch_path().native();
     }
 
     inline string basename( const string& path )
@@ -126,17 +126,17 @@ namespace filesystem {
         boost::filesystem::directory_iterator iter( fs_dirpath ), end_iter;
         for( ; iter != end_iter; ++iter ) {
             boost::filesystem::path filename = iter->path();
-            if( match_extensions( filename.native_file_string(), extensions ) ) {
+            if( match_extensions( filename.native(), extensions ) ) {
                 if(list_all) {
-                    filelist.push_back( filename.native_file_string() );
+                    filelist.push_back( filename.native() );
                 } else if(list_regular_file && boost::filesystem::is_regular( filename )) {
-                    filelist.push_back( filename.native_file_string() );                
+                    filelist.push_back( filename.native() );                
                 } else if(list_directory && boost::filesystem::is_directory( filename )) {
-                    filelist.push_back( filename.native_file_string() );
+                    filelist.push_back( filename.native() );
                 } else if(list_symlink && boost::filesystem::is_symlink( filename )) {
-                    filelist.push_back( filename.native_file_string() );
+                    filelist.push_back( filename.native() );
                 } else if(list_other && boost::filesystem::is_other( filename )) {
-                    filelist.push_back( filename.native_file_string() );
+                    filelist.push_back( filename.native() );
                 }
             }
         }
