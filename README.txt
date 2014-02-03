@@ -5,6 +5,10 @@ The fork compile on MacOS without problems.
 
 See more http://code.google.com/p/imageclipper/
 
+
+Compilation tutorial:
+http://mac-opencv-projects.blogspot.fr/2014/02/tutorial-build-imageclipper-on-mac-os-x.html
+
 ===========
 The MIT License
 
